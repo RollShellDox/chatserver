@@ -6,5 +6,5 @@ CXX_FLAGS = -g -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server 
+CXX_INCLUDES = -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/thirdparty 
 

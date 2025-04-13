@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/zxiaoc/CHAT/build/src/server",
-  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server  -g -g   -o CMakeFiles/ChatServer.dir/chatserver.cpp.o -c /home/zxiaoc/CHAT/src/server/chatserver.cpp",
+  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatserver.cpp.o -c /home/zxiaoc/CHAT/src/server/chatserver.cpp",
   "file": "/home/zxiaoc/CHAT/src/server/chatserver.cpp"
 },
 {
   "directory": "/home/zxiaoc/CHAT/build/src/server",
-  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server  -g -g   -o CMakeFiles/ChatServer.dir/chatservice.cpp.o -c /home/zxiaoc/CHAT/src/server/chatservice.cpp",
+  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatservice.cpp.o -c /home/zxiaoc/CHAT/src/server/chatservice.cpp",
   "file": "/home/zxiaoc/CHAT/src/server/chatservice.cpp"
 },
 {
   "directory": "/home/zxiaoc/CHAT/build/src/server",
-  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server  -g -g   -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/zxiaoc/CHAT/src/server/main.cpp",
+  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/zxiaoc/CHAT/src/server/main.cpp",
   "file": "/home/zxiaoc/CHAT/src/server/main.cpp"
 }
 ]

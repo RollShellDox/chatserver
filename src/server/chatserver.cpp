@@ -1,4 +1,5 @@
 #include "chatserver.hpp"
+#include "chatservice.hpp"
 #include <functional>
 using namespace std;
 using namespace placeholders;
@@ -44,4 +45,8 @@ void ChatServer::onMessage(const TcpConnectionPtr &conn,
     json js = json::parse(buf);
 
     // 条件判断msg_id？ NO！ -->     js[msg_id]获取业务Handler，从而获取对应的conn js time
+    auto msgHandler = ChatService::instance()->getHandler(js["msgid"].get<int>());
+
+    // 回调消息绑定好的事件处理器，来执行相应的业务处理
+    msgHandler(conn, js, time);
 }
