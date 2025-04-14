@@ -10,6 +10,7 @@ using namespace muduo;
 using namespace muduo::net;
 
 #include "json.hpp"
+#include "usermodel.hpp"
 using json = nlohmann::json;
 
 using MsgHandler = function<void(const TcpConnectionPtr &conn, json &js, Timestamp time)>;
@@ -35,6 +36,9 @@ private:
 
     // 存储消息id和业务处理方法
     unordered_map<int, MsgHandler> _msgHandlerMap;
+
+    // 数据操作类对象
+    UserModel _userModel;
 };
 
 #endif

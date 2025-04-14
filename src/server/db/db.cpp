@@ -5,7 +5,7 @@
 static string server = "127.0.0.1";
 static string user = "root";
 static string password = "123456";
-static string dbname = "chat";
+static string dbname = "chattest";
 
 // 初始化数据库连接
 MySQL::MySQL()
@@ -27,6 +27,11 @@ bool MySQL::connect()
     {
         // C和C++的默认编码字符是ASCII，若不设置，从mysql上拉下来的中文会乱码
         mysql_query(_conn, "set names gbk");
+        LOG_INFO << "connect success!";
+    }
+    else
+    {
+        LOG_INFO << "connect fail!";
     }
     return p;
 }
@@ -51,4 +56,10 @@ MYSQL_RES *MySQL::query(string sql)
         return nullptr;
     }
     return mysql_use_result(_conn);
+}
+
+// 获取连接
+MYSQL *MySQL::getConnection()
+{
+    return this->_conn;
 }
