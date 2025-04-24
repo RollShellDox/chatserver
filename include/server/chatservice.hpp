@@ -23,13 +23,17 @@ public:
     // 获取单例服务类对象的接口
     static ChatService *instance();
 
+    // 处理登录业务
+    void login(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+    // 处理注册业务
+    void reg(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
     // 获取消息对应的处理器
     MsgHandler getHandler(int msgid);
 
-    // 处理登录业务
-    void login(const TcpConnectionPtr &conn, json &js, Timestamp time);
-    // 处理注册业务
-    void reg(const TcpConnectionPtr &conn, json &js, Timestamp time);
+    // 处理客户端异常退出
+    void clientCloseException(const TcpConnectionPtr &conn);
 
 private:
     // 单例模式，隐藏构造函数 //注册消息以及对应的Handler回调函数
