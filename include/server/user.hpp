@@ -19,7 +19,7 @@ public:
     void setId(int id) { this->id = id; }
     void setName(string name) { this->name = name; }
     void setPassword(string password) { this->password = password; }
-    void setState(string name) { this->state = state; }
+    void setState(string state) { this->state = state; }
 
     int getId() { return this->id; }
     string getName() { return this->name; }
