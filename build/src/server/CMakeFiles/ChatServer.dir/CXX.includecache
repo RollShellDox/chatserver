@@ -8,12 +8,6 @@
 
 ../include/public.hpp
 
-../include/server/chatserver.hpp
-muduo/net/TcpServer.h
--
-muduo/net/EventLoop.h
--
-
 ../include/server/chatservice.hpp
 muduo/net/TcpConnection.h
 ../include/server/muduo/net/TcpConnection.h
@@ -27,6 +21,22 @@ json.hpp
 ../include/server/json.hpp
 usermodel.hpp
 ../include/server/usermodel.hpp
+offlinemessagemodel.hpp
+../include/server/offlinemessagemodel.hpp
+friendmodel.hpp
+../include/server/friendmodel.hpp
+
+../include/server/friendmodel.hpp
+user.hpp
+../include/server/user.hpp
+vector
+-
+
+../include/server/offlinemessagemodel.hpp
+string
+-
+vector
+-
 
 ../include/server/user.hpp
 string
@@ -366,16 +376,6 @@ limits
 type_traits
 -
 
-/home/zxiaoc/CHAT/src/server/chatserver.cpp
-chatserver.hpp
-/home/zxiaoc/CHAT/src/server/chatserver.hpp
-chatservice.hpp
-/home/zxiaoc/CHAT/src/server/chatservice.hpp
-functional
--
-json.hpp
-/home/zxiaoc/CHAT/src/server/json.hpp
-
 /home/zxiaoc/CHAT/src/server/chatservice.cpp
 chatservice.hpp
 /home/zxiaoc/CHAT/src/server/chatservice.hpp
@@ -383,4 +383,8 @@ public.hpp
 /home/zxiaoc/CHAT/src/server/public.hpp
 muduo/base/Logging.h
 /home/zxiaoc/CHAT/src/server/muduo/base/Logging.h
+vector
+-
+map
+-
 

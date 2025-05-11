@@ -11,8 +11,18 @@
 },
 {
   "directory": "/home/zxiaoc/CHAT/build/src/server",
+  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/include/server/db -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/friendmodel.cpp.o -c /home/zxiaoc/CHAT/src/server/friendmodel.cpp",
+  "file": "/home/zxiaoc/CHAT/src/server/friendmodel.cpp"
+},
+{
+  "directory": "/home/zxiaoc/CHAT/build/src/server",
   "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/include/server/db -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/zxiaoc/CHAT/src/server/main.cpp",
   "file": "/home/zxiaoc/CHAT/src/server/main.cpp"
+},
+{
+  "directory": "/home/zxiaoc/CHAT/build/src/server",
+  "command": "/usr/bin/g++   -I/home/zxiaoc/CHAT/include -I/home/zxiaoc/CHAT/include/server -I/home/zxiaoc/CHAT/include/server/db -I/home/zxiaoc/CHAT/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o -c /home/zxiaoc/CHAT/src/server/offlinemessagemodel.cpp",
+  "file": "/home/zxiaoc/CHAT/src/server/offlinemessagemodel.cpp"
 },
 {
   "directory": "/home/zxiaoc/CHAT/build/src/server",
