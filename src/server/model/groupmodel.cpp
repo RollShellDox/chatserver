@@ -27,7 +27,7 @@ void GroupModel::addGroup(int userid, int groupid, string role)
 {
     // 1.组装sql语句
     char sql[1024] = {0};
-    sprintf(sql, "insert into groupuesr values(%d,%d,'%s')",
+    sprintf(sql, "insert into groupuser values(%d,%d,'%s')",
             groupid, userid, role.c_str());
 
     MySQL mysql;
@@ -106,7 +106,11 @@ vector<Group> GroupModel::queryGroups(int userid)
 vector<int> GroupModel::queryGroupUsers(int userid, int groupid)
 {
     char sql[1024] = {0};
-    sprintf(sql, "select userid from groupuser where groupid = %d and userid = %d", groupid, userid);
+    // sprintf(sql, "select userid from groupuser where groupid = %d and userid != %d", groupid, userid);
+    // 上面是不用转发给自己的语句，但是群聊用户应当能看见自己的信息，所以需要转发给自己
+
+    // sprintf(sql, "select userid from groupuser where groupid = %d and userid = %d", groupid, userid);
+    sprintf(sql, "select userid from groupuser where groupid = %d", groupid);
 
     vector<int> idVec;
 

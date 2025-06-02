@@ -8,6 +8,12 @@
 
 ../include/public.hpp
 
+../include/server/chatserver.hpp
+muduo/net/TcpServer.h
+-
+muduo/net/EventLoop.h
+-
+
 ../include/server/chatservice.hpp
 muduo/net/TcpConnection.h
 ../include/server/muduo/net/TcpConnection.h
@@ -27,6 +33,12 @@ friendmodel.hpp
 ../include/server/friendmodel.hpp
 groupmodel.hpp
 ../include/server/groupmodel.hpp
+
+../include/server/db/db.h
+mysql/mysql.h
+-
+string
+-
 
 ../include/server/model/friendmodel.hpp
 user.hpp
@@ -398,6 +410,16 @@ limits
 type_traits
 -
 
+/home/zxiaoc/CHAT/src/server/chatserver.cpp
+chatserver.hpp
+/home/zxiaoc/CHAT/src/server/chatserver.hpp
+chatservice.hpp
+/home/zxiaoc/CHAT/src/server/chatservice.hpp
+functional
+-
+json.hpp
+/home/zxiaoc/CHAT/src/server/json.hpp
+
 /home/zxiaoc/CHAT/src/server/chatservice.cpp
 chatservice.hpp
 /home/zxiaoc/CHAT/src/server/chatservice.hpp
@@ -409,4 +431,22 @@ vector
 -
 map
 -
+iostream
+-
+
+/home/zxiaoc/CHAT/src/server/main.cpp
+iostream
+-
+chatserver.hpp
+/home/zxiaoc/CHAT/src/server/chatserver.hpp
+chatservice.hpp
+/home/zxiaoc/CHAT/src/server/chatservice.hpp
+signal.h
+-
+
+/home/zxiaoc/CHAT/src/server/model/groupmodel.cpp
+groupmodel.hpp
+/home/zxiaoc/CHAT/src/server/model/groupmodel.hpp
+db.h
+/home/zxiaoc/CHAT/src/server/model/db.h
 
