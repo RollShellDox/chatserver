@@ -26,7 +26,7 @@ bool MySQL::connect()
     if (p != nullptr)
     {
         // C和C++的默认编码字符是ASCII，若不设置，从mysql上拉下来的中文会乱码
-        mysql_query(_conn, "set names gbk");
+        mysql_query(_conn, "set names utf8mb4");
         LOG_INFO << "connect success!";
     }
     else

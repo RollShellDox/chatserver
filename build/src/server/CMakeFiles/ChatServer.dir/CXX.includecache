@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../include/server/redis/redis.hpp
-hiredis/hiredis.h
+../include/server/db/db.h
+mysql/mysql.h
 -
-thread
--
-functional
+string
 -
 
-/home/zxiaoc/CHAT/src/server/redis/redis.cpp
-redis.hpp
-/home/zxiaoc/CHAT/src/server/redis/redis.hpp
-iostream
+/home/zxiaoc/CHAT/src/server/db/db.cpp
+db.h
+/home/zxiaoc/CHAT/src/server/db/db.h
+muduo/base/Logging.h
 -
 
