@@ -1,0 +1,10 @@
+debug/group.o
+debug/groupuser.o
+debug/main.o
+debug/mainwindow.o
+debug/public.o
+debug/user.o
+debug/user.o
+debug/group.o
+debug/groupuser.o
+debug/moc_mainwindow.o

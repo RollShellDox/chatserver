@@ -1,0 +1,10 @@
+release/group.o
+release/groupuser.o
+release/main.o
+release/mainwindow.o
+release/public.o
+release/user.o
+release/user.o
+release/group.o
+release/groupuser.o
+release/moc_mainwindow.o

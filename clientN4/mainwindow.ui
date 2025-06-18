@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>聊天客户端</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="loginPage">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>服务器连接</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>服务器IP:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="serverIpEdit"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>端口:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="serverPortEdit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="connectButton">
+             <property name="text">
+              <string>连接</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>登录</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>用户ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="userIdEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>密码:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="passwordEdit">
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="loginButton">
+              <property name="text">
+               <string>登录</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>注册</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>用户名:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="regNameEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>密码:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="regPwdEdit">
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="registerButton">
+              <property name="text">
+               <string>注册</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="mainPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>好友列表</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="friendList"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>群组列表</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="groupList"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="addFriendButton">
+             <property name="text">
+              <string>添加好友</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="createGroupButton">
+             <property name="text">
+              <string>创建群组</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="joinGroupButton">
+             <property name="text">
+              <string>加入群组</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="logoutButton">
+             <property name="text">
+              <string>注销</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+           <widget class="QTextEdit" name="chatTextEdit">
+             <property name="readOnly">
+               <bool>true</bool>
+             </property>
+           </widget>
+           </item>
+           <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+               <widget class="QTextEdit" name="messageEdit"/>
+             </item>
+             <item>
+               <widget class="QPushButton" name="sendButton">
+                 <property name="text">
+                   <string>发送</string>
+                 </property>
+               </widget>
+             </item>
+             <item>
+               <widget class="QPushButton" name="groupSendButton">
+                 <property name="text">
+                   <string>群发</string>
+                 </property>
+               </widget>
+             </item>
+           </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
